@@ -1,0 +1,23 @@
+.footer {
+    background: linear-gradient(to right, var(--primary), var(--secondary) 75%, var(--accent));
+    color: var(--white);
+    padding: 2rem 0 2rem 20px;
+    margin-top: 3rem;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLogo img {
+    height: 40px;
+}
+
+.copyright {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}

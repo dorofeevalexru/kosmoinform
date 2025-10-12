@@ -1,0 +1,112 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--white);
+    border-bottom: 1px solid var(--medium-gray);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.guapLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-weight: bold;
+    background: linear-gradient(to right, var(--primary), var(--secondary) 75%, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Бургер-меню */
+.burgerBtn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.burgerLine {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: var(--primary);
+    transition: all 0.3s;
+}
+
+/* Навигация */
+.navPanel {
+    display: flex;
+    gap: 20px;
+}
+
+.navLink {
+    color: var(--text);
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.navLink:hover {
+    color: var(--primary);
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 15px;
+    }
+    
+    .guapLogo {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .burgerBtn {
+        display: flex;
+    }
+    
+    .navPanel {
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        flex-direction: column;
+        background: var(--white);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        transition: left 0.3s ease;
+    }
+    
+    .navPanel.active {
+        left: 0;
+    }
+    
+    .navLink {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Анимации бургер-меню */
+.burgerBtn.active .top {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.burgerBtn.active .middle {
+    opacity: 0;
+}
+
+.burgerBtn.active .bottom {
+    transform: translateY(-8px) rotate(-45deg);
+}

@@ -1,0 +1,16 @@
+/*CSS переменные*/
+:root {
+    --primary: #005aaa;
+    --secondary: #ab3a8d;
+    --accent: #e72b70;
+    --text: #333;
+    --light-gray: #f5f5f5;
+    --medium-gray: #e0e0e0;
+    --dark-gray: #555;
+    --white: #fff;
+    
+    /* Дополнительные переменные */
+    --border-radius: 4px;
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
