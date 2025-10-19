@@ -126,6 +126,22 @@ export const projectsData = [
     mapLink: "#",
     content: "Контент второго проекта..."
   },
+      {
+    id: 'project-11',
+    title: "KFkfkfkfkfk",
+    description: "Мониторинг земной поверхности с использованием спутниковых данных",
+    shortDescription: "Спутниковый мониторинг окружающей среды",
+    image: "/assets/img/aviatraffic.jpg",
+    heroImage: "/assets/img/default-bg.jpg",
+    period: "2021-2023 гг.",
+    leader: "Петров С.И.",
+    participants: "8 специалистов",
+    tags: ["Космос", "Мониторинг", "ДЗЗ"],
+    reportLink: "#",
+    mapImage: "/assets/img/map-placeholder.jpg",
+    mapLink: "#",
+    content: "Контент второго проекта..."
+  },
 ];
 
 export const getProjectById = (id) => {

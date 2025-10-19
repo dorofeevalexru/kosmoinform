@@ -34,9 +34,10 @@ const ProjectCard = ({ project, searchQuery = '' }) => {
           <Link to={`/project/${project.id}`} className="btn">
             Подробнее
           </Link>
-          <a href={project.mapLink} className={`btn ${styles.btnMap}`}>
+          {/* путь на планнер */}
+          <Link to="/map" className={`btn ${styles.btnMap}`}>
             На карте
-          </a>
+          </Link>
         </div>
       </div>
     </div>
